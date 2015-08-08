@@ -1,0 +1,103 @@
+<%= stylesheet_link_tag    '_form', media: 'all', 'data-turbolinks-track' => true %>
+
+<%= form_for(@show) do |f| %>
+  <% if @show.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@show.errors.count, "error") %> prohibited this show from being saved:</h2>
+
+      <ul>
+      <% @show.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container-fluid">
+    <div class="field">
+      <%= f.label :date %><br>
+      <%= f.date_select :date %>
+    </div>
+    <div class="field">
+      <%= f.label :time %><br>
+      <%= f.time_select :time %>
+    </div>
+    <div class="field">
+      <%= f.text_area :title, :placeholder => "TITLE (e.g. \'Or Bareket Trio\')" %>
+    </div>
+    <div class="field">
+      <%= f.text_area :venue, :placeholder => "VENUE (e.g. \'Smalls Jazz Club\')" %>
+    </div>
+  </div>
+
+  <div class="row field">
+    <h3>ARTIST + INSTRUMENT 1</h3>
+    <br>
+    <div class="col-xs-6" style="padding-left:0">
+        <%= f.text_area :artist1, :placeholder => "ARTIST" %>
+    </div>
+
+    <div class="col-xs-6" style="padding-right:0">
+        <%= f.text_area :instrument1, :placeholder => "INSTRUMENT" %>
+    </div>
+  </div>
+
+
+  <div class="row field">
+    <h3>ARTIST + INSTRUMENT 2</h3>
+    <br>
+    <div class="col-xs-6" style="padding-left:0">
+        <%= f.text_area :artist2, :placeholder => "ARTIST" %>
+    </div>
+
+    <div class="col-xs-6" style="padding-right:0">
+        <%= f.text_area :instrument2, :placeholder => "INSTRUMENT" %>
+    </div>
+  </div>
+
+  <div class="row field">
+    <h3>ARTIST + INSTRUMENT 3</h3>
+    <br>
+    <div class="col-xs-6" style="padding-left:0">
+        <%= f.text_area :artist3, :placeholder => "ARTIST" %>
+    </div>
+
+    <div class="col-xs-6" style="padding-right:0">
+        <%= f.text_area :instrument3, :placeholder => "INSTRUMENT" %>
+    </div>
+  </div>
+
+  <div class="row field">
+    <h3>ARTIST + INSTRUMENT 4</h3>
+    <br>
+    <div class="col-xs-6" style="padding-left:0">
+        <%= f.text_area :artist4, :placeholder => "ARTIST" %>
+    </div>
+
+    <div class="col-xs-6" style="padding-right:0">
+        <%= f.text_area :instrument4, :placeholder => "INSTRUMENT" %>
+    </div>
+  </div>
+
+  <div class="row field">
+    <h3>ARTIST + INSTRUMENT 5</h3>
+    <br>
+    <div class="col-xs-6" style="padding-left:0">
+        <%= f.text_area :artist5, :placeholder => "ARTIST" %>
+    </div>
+
+    <div class="col-xs-6" style="padding-right:0">
+        <%= f.text_area :instrument5, :placeholder => "INSTRUMENT" %>
+    </div>
+  </div>
+
+    <div class="field">
+      <%= f.text_area :link, :placeholder => "LINK (e.g. \'facebook.com\') - do NOT include http://" %>
+    </div>
+
+    <div class="actions field">
+      <%= f.submit %>
+    </div>
+
+  </div>
+<% end %>

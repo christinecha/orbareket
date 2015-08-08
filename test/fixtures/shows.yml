@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-08-08
+  time: 2015-08-08 19:18:19
+  title: MyText
+  venue: MyText
+  artist1: MyText
+  instrument1: MyText
+  artist2: MyText
+  instrument2: MyText
+  artist3: MyText
+  instrument3: MyText
+  artist4: MyText
+  instrument4: MyText
+  artist5: MyText
+  instrument5: MyText
+  link: MyText
+
+two:
+  date: 2015-08-08
+  time: 2015-08-08 19:18:19
+  title: MyText
+  venue: MyText
+  artist1: MyText
+  instrument1: MyText
+  artist2: MyText
+  instrument2: MyText
+  artist3: MyText
+  instrument3: MyText
+  artist4: MyText
+  instrument4: MyText
+  artist5: MyText
+  instrument5: MyText
+  link: MyText
