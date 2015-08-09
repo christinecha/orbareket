@@ -53,9 +53,10 @@ $('.musicslideshow').slick({
 // HOVER HEADER IMAGE
 
 $("#homepage-image").hover(function(){
-	$("#homepage-image").attr("src", "app/assets/images/Silhouette2.png");
+	$("#homepage-image").attr("src", '<%= image_path "Silhouette2.png", :id => "homepage-image" %>');
+  console.log("hovered");
 }, function() {
-	$("#homepage-image").attr("src", "app/assets/images/Silhouette1.png");
+  $("#homepage-image").attr("src", '<%= image_path "Silhouette1.png", :id => "homepage-image" %>');
 }
 );
 
