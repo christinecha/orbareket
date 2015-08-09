@@ -123,6 +123,10 @@ img {
 	text-align: center;
 }
 
+@media (max-width:400px){
+	.anchor-link { visibility: hidden; }
+}
+
 /********************************************
 HOMEPAGE
 ********************************************/
@@ -135,6 +139,10 @@ HOMEPAGE
 	margin-top: 80px;
 	margin-bottom: 80px;
 	height: 400px;
+}
+
+@media (max-width:400px){
+	#homepage-image { height: 100px; margin-top: 10px; margin-bottom: 20px; }
 }
 
 #title {
@@ -165,8 +173,8 @@ HOMEPAGE
 }
 
 #header-spacer {
-	height:750px; 
-	background-color: none; 
+	height:750px;
+	background-color: none;
 	position:relative;
 	padding: 0;
 }
@@ -202,6 +210,11 @@ BIO
 	bottom: 0;
 	margin-bottom: 0;
 	z-index: 10;
+}
+
+@media (max-width:400px){
+	#rollingbass { visibility: hidden; width: 0; }
+	.city-name { font-size: 12px; }
 }
 
 /********************************************
@@ -249,8 +262,6 @@ SHOWS
 	display: inline-block;
 }
 
-
-
 #mailinglist-signup {
 	width: 80%;
 	margin: auto;
@@ -269,7 +280,9 @@ SHOWS
 	text-align: center;
 }
 
-
+@media (max-width:400px){
+	.default2 { font-size: 16px; }
+}
 
 /********************************************
 MUSIC
@@ -342,11 +355,16 @@ MUSIC
 		position: relative;
 	}
 
-	.song-info {
-		z-index: 50000;
+	.song-info { z-index: 50000; }
+}
 
-	}
-
+@media (max-width: 500px){
+	.song { width: 85%; }
+	.musicslideshow { width: 85%; }
+	.song img { visibility: hidden; width: 0; }
+	.song:hover { background-color: #fff; }
+	.song h3 { margin-top: 50%; }
+	.slick-arrow { z-index: 500000; }
 }
 
 /********************************************
@@ -396,6 +414,7 @@ CONTACT
 
 #contact h3 {
 	font-size: 16px;
+	margin-top: 22px;
 }
 
 #contact a {
@@ -410,4 +429,3 @@ CONTACT
 		padding: 0 50px;
 	}
 }
-
