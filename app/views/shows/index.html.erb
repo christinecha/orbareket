@@ -93,8 +93,10 @@
                 <%= show.artist5 %><%= " on " + show.instrument5 if show.artist5? %>
                 <br>
               </p>
-              <button class = "default1"><%= link_to "RSVP", "http://" + show.link %></button>
-              <button class = "default1">SHARE</button>
+              <% if show.link? %>
+                <button class = "default1"><%= link_to "RSVP", "http://" + show.link, :target => "_blank" %></button>
+              <% end %>
+              <button class = "default1"><%= link_to "SHARE", "http://ctt.ec/UlAO2", :target => "_blank"  %></button>
             </div>
           </div>
         <% end %>
