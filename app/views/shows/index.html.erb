@@ -82,15 +82,15 @@
               <p id = "showTime"><%= show.time.strftime ("%l:%M %p") %></p>
               <br>
               <p id = "showArtist">
-                <%= show.artist1 + " on " + show.instrument1 if show.artist1? %>
+                <%= show.artist1 %><%= " on " + show.instrument1 if show.artist1? %>
                 <br>
-                <%= show.artist2 + " on " + show.instrument2 if show.artist2? %>
+                <%= show.artist2 %><%= " on " + show.instrument2 if show.artist2? %>
                 <br>
-                <%= show.artist3 + " on " + show.instrument3 if show.artist3? %>
+                <%= show.artist3 %><%= " on " + show.instrument3 if show.artist3? %>
                 <br>
-                <%= show.artist4 + " on " + show.instrument4 if show.artist4? %>
+                <%= show.artist4 %><%= " on " + show.instrument4 if show.artist4? %>
                 <br>
-                <%= show.artist5 + " on " + show.instrument5 if show.artist5? %>
+                <%= show.artist5 %><%= " on " + show.instrument5 if show.artist5? %>
                 <br>
               </p>
               <button class = "default1"><%= link_to "RSVP", "http://" + show.link %></button>
