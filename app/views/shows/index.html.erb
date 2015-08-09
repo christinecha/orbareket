@@ -149,7 +149,7 @@
           <br>
           Felix Lecaros on drums
         </p>
-        <audio src="assets/Music_Jenga.mp3" id="audio1" type="audio/mpeg"></audio>
+        <%= audio_tag ("Music_Jenga.mp3"), :id => "audio1" %>
         <a class="controls"><i class="fa fa-play"></i><i class="fa fa-pause"></i></a>
       </div>
       <div class="song">
@@ -161,7 +161,7 @@
         <p class="xs">Eden Bareket on bari</p>
         <p class="xs">Or Bareket on bass</p>
         <p class="xs">Felix Lecaros on drums</p>
-        <audio src="assets/Music_Racoon.mp3" id="audio2"type="audio/mpeg"></audio>
+        <%= audio_tag ("Music_Racoon.mp3"), :id => "audio2" %>
         <br>
         <a class="play2"><i class="fa fa-play-circle-o"></i></a>
       </div>
@@ -218,6 +218,6 @@
 </div>
 
 <%= javascript_include_tag    'https://code.jquery.com/jquery-2.1.4.min.js' %>
-<%= javascript_include_tag    'http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js' %>
+<%= javascript_include_tag    'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js' %>
 <%= javascript_include_tag    '//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js' %>
 <%= javascript_include_tag    'script.js' %>
