@@ -38,7 +38,7 @@ responsive: [
       }
     }
   ]
-});				
+});
 
 $('.musicslideshow').slick({
 	dots: false,
@@ -46,16 +46,16 @@ $('.musicslideshow').slick({
 	speed: 300,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	});				
+	});
 
 
 
 // HOVER HEADER IMAGE
 
 $("#homepage-image").hover(function(){
-	$("#homepage-image").attr("src", "assets/Silhouette2.png");
+	$("#homepage-image").attr("src", "app/assets/images/Silhouette2.png");
 }, function() {
-	$("#homepage-image").attr("src", "assets/Silhouette1.png");
+	$("#homepage-image").attr("src", "app/assets/images/Silhouette1.png");
 }
 );
 
@@ -83,8 +83,8 @@ $(window).scroll(function(e) {
     }
     else{
         $('#homepage-image').css("height", stopHeight);
-        $('#homepage-image').css("margin-top", stopMargin); 
-        $('#homepage-image').css("margin-bottom", stopMargin); 
+        $('#homepage-image').css("margin-top", stopMargin);
+        $('#homepage-image').css("margin-bottom", stopMargin);
     }
 
     var newLeft = startLeft + (windowScroll*1.25);
@@ -95,7 +95,7 @@ $(window).scroll(function(e) {
 	    $("#rollingbass").css('left', ($(window).width()-100));
 	}
 
-});  
+});
 
 // BIO EXPAND AND COLLAPSE
 
@@ -169,4 +169,3 @@ $('.play2').click(function() {
 //     });
 //     return false;
 // });
-
