@@ -141,9 +141,6 @@ HOMEPAGE
 	height: 400px;
 }
 
-@media (max-width:400px){
-	#homepage-image { height: 100px; margin-top: 10px; margin-bottom: 20px; }
-}
 
 #title {
 	color: #7518a8;
@@ -177,6 +174,11 @@ HOMEPAGE
 	background-color: none;
 	position:relative;
 	padding: 0;
+}
+
+@media (max-width:400px){
+	#homepage-image { height: 150px; margin-top: 10px; margin-bottom: 20px; }
+	#header-spacer { height: 250px; }
 }
 
 
@@ -214,7 +216,7 @@ BIO
 
 @media (max-width:400px){
 	#rollingbass { visibility: hidden; width: 0; }
-	.city-name { font-size: 12px; }
+	.city-name { font-size: 11px; }
 }
 
 /********************************************
@@ -359,8 +361,8 @@ MUSIC
 }
 
 @media (max-width: 500px){
-	.song { width: 85%; }
-	.musicslideshow { width: 85%; }
+	.song { width: 80%; }
+	.musicslideshow { width: 80%; }
 	.song img { visibility: hidden; width: 0; }
 	.song:hover { background-color: #fff; }
 	.song h3 { margin-top: 50%; }

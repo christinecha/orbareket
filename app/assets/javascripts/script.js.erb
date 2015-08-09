@@ -70,7 +70,6 @@ var imageHeight = parseInt($('#homepage-image').css('height')),
     startLeft = parseInt($('#rollingbass').css('left'));
 
 $(window).scroll(function(e) {
-  if (($(window).innerWidth) <= 400) {
     var windowScroll = $(window).scrollTop(),
         newMargin = marginHeight - (windowScroll/5),
         newHeight = imageHeight - windowScroll,
@@ -96,9 +95,6 @@ $(window).scroll(function(e) {
 	} else {
 	    $("#rollingbass").css('left', ($(window).width()-100));
 	}
-} else {
-  $('#homepage-image').css("height", "100px");
-};
 });
 
 // BIO EXPAND AND COLLAPSE
